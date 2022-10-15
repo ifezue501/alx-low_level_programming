@@ -1,29 +1,27 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
  * main - Entry point
  *
- * Return: Always 0 (Succes)
+ * Return: Always 0 (success)
  */
-
 int main(void)
 {
-	int a;
-	int i = 0;
+	int n;
+	int i;
 
-	for (a = 0; a < 9; a++)
+	for (n = 0 ; n < 9 ; n++)
 	{
-		putchar(a / 10 + '0');
-		putchar(i + '0');
-		if (a < 8)
-		{
-			putchar(',');
-			putchar(32);
-		}
-		i++;
-		if (i > 9)
-		{
-			i = 0;
-		}
+		i = n + 1;
+		do {
+			putchar('0' + n);
+			putchar('0' + i);
+			if (n < 8)
+			{
+				putchar(',');
+				putchar(32);
+			}
+			i++;
+		} while (i < 10);
 	}
 	putchar('\n');
 	return (0);

@@ -5,8 +5,8 @@
  * @size: size of array
  * @c: specific char
  * Return: pointer to array, NULL if fail
- *
  */
+
 char *create_array(unsigned int size, char c)
 {
 	char *a;
@@ -21,6 +21,6 @@ char *create_array(unsigned int size, char c)
 
 	for (i = 0; i < size; i++)
 		a[i] = c;
-	
+
 	return (a);
 }

@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "operations.h"
 
 /**
  * add - adds two numbers
@@ -42,11 +42,4 @@ int div(int a, int b)
 int mod(int a, int b)
 {
 	return a % b;
-}
-
-int main()
-{
-	int result;
-	result = add(4, 5);
-	print("The sum of two numbers is: %d", result);
 }
